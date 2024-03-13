@@ -26,7 +26,7 @@ const Login:React.FC = () => {
         <>
          <nav className="navbar">
                 <div className="logo">
-                    <img src="./images/logo.png" alt="logo" />
+                    <img src="../images/logo.png" alt="logo" />
                 </div>
                 <div className="search-bar">
                     <input type="text" placeholder='Search...' />
@@ -38,7 +38,7 @@ const Login:React.FC = () => {
                         <li><a href="/login">Login</a></li>
                         <li><a href="/signup">Sign Up</a></li>
                         <li><a href="#">Cart</a></li>
-                        <li><a href="#">account</a><img src="./images/account_icon.png" alt="account_icon" className='account_icon' /></li>
+                        <li><a href="#">account</a><img src="../images/logo.png" alt="account_icon" className='account_icon' /></li>
                     </ul>
                 </div>
             </nav>

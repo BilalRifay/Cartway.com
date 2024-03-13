@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { redirect } from 'react-router-dom';
 import '../stylesheet/home.css';
 import '../stylesheet/signup.css';
 
@@ -8,6 +7,7 @@ const SignUp: React.FC = () => {
     const [email, setEmail] = useState ("");
     const [password, setPassword] = useState ("");
     const [confirmPass, setConfirmPass] = useState ("");
+    const [account,setAccount] =useState("Account");
 
     const SignUp_function = () => {
         const Datas={name:name,email:email,password:password,confirmPassword:confirmPass}
@@ -19,7 +19,8 @@ const SignUp: React.FC = () => {
             body:JSON.stringify(Datas)
         }).then(res=>{
             if(res.ok){
-                alert('Successfull Sign Up')
+                setAccount(name);
+                alert('Successfull Sign Up');
             }
         }).catch(error=>{
             console.error(error)
@@ -42,7 +43,7 @@ const SignUp: React.FC = () => {
                         <li><a href="/login">Login</a></li>
                         <li><a href="/signup">Sign Up</a></li>
                         <li><a href="#">Cart</a></li>
-                        <li><a href="#">Account</a><img src="./images/account_icon.png" alt="account_icon" className='account_icon' /></li>
+                        <li><a href="#">{account}</a><img src="./images/account_icon.png" alt="account_icon" className='account_icon' /></li>
                     </ul>
                 </div>
             </nav>
@@ -68,22 +69,7 @@ const SignUp: React.FC = () => {
                     />
                     <button onClick={SignUp_function}>Sign up</button>
             </div>
-        {/* <div>
-            <h2>Sign Up Form</h2>
-            <input type="text" placeholder='Name' value={name}
-                onChange={(e) => setName(e.target.value)} required />
-                <br />
-            <input type="email" placeholder='Email' value={email}
-                onChange={(e) => setEmail(e.target.value)} required />
-                <br />
-            <input type="password" placeholder='Password' value={password}
-                onChange={(e) => setPassword(e.target.value)} required />
-                <br />
-            <input type="password" placeholder='Confirm Password' value={confirmPass}
-                onChange={(e) => setConfirmPass(e.target.value)} required />
-                <br />
-            <button onClick={SignUp_function}>Sign Up</button>
-        </div> */}
+        
         </>
     );
 };

@@ -38,7 +38,7 @@ const Login:React.FC = () => {
                         <li><a href="/login">Login</a></li>
                         <li><a href="/signup">Sign Up</a></li>
                         <li><a href="#">Cart</a></li>
-                        <li><a href="#">Account</a><img src="./images/account_icon.png" alt="account_icon" className='account_icon' /></li>
+                        <li><a href="#">account</a><img src="./images/account_icon.png" alt="account_icon" className='account_icon' /></li>
                     </ul>
                 </div>
             </nav>
@@ -51,19 +51,6 @@ const Login:React.FC = () => {
                     value={password} onChange={e=>setPassword(e.target.value)}/>
                     <button onClick={Login_function}>Login</button>
             </div>
-        {/* <div>
-            <h1>
-                Login Form
-            </h1>
-            <input type="email" placeholder='Email' value={email} required  
-            onChange={e=>setEmail(e.target.value)}/>
-            <input type="password" placeholder='Password' value={password} required 
-            onChange={e=>setPassword(e.target.value)}/>
-            <button onClick={Login_function}>Login</button>
-            <div>
-                <a href="/signup">Sign Up Page</a>
-            </div>
-        </div> */}
 </>
     );
 }

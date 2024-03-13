@@ -16,7 +16,6 @@ export const Home: React.FC = () => {
         fetch('https://api-e-commerce-9xdg.onrender.com/v1/products')
             .then(result => result.json())
             .then(data => {
-                // Assuming data is an array of products
                 if (Array.isArray(data)) {
                     setProducts(data);
                 } else {
@@ -68,25 +67,3 @@ export const Home: React.FC = () => {
         </>
     );
 };
-
-
-// const data:React.FC =()=>{
-//     const [product , setProduct] =useState([]);
-//     useEffect(()=>{
-        
-//             fetch('https://api-e-commerce-9xdg.onrender.com/v1/products')
-//             .then(result=>result.json())
-//             .then((data)=>{
-//                 const product_datas=data
-//                 setProduct(product_datas);
-//             })
-//             .catch(error=>{
-//                 console.error("Some Error In fetching Data",error)
-//             })
-//     },[])
-    
-//     return (
-//         <Home product_name={product.product_name} price={product.price} 
-//         description={product.description} rating={product.rating} brand={product.brand}/>
-//     );
-// };

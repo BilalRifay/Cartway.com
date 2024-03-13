@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github.io/Cartway.com/static/css/main.b490e32e.css",
+    "main.js": "/github.io/Cartway.com/static/js/main.a9e96dba.js",
+    "static/js/453.d1c1d7dd.chunk.js": "/github.io/Cartway.com/static/js/453.d1c1d7dd.chunk.js",
+    "index.html": "/github.io/Cartway.com/index.html",
+    "main.b490e32e.css.map": "/github.io/Cartway.com/static/css/main.b490e32e.css.map",
+    "main.a9e96dba.js.map": "/github.io/Cartway.com/static/js/main.a9e96dba.js.map",
+    "453.d1c1d7dd.chunk.js.map": "/github.io/Cartway.com/static/js/453.d1c1d7dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b490e32e.css",
+    "static/js/main.a9e96dba.js"
+  ]
+}
